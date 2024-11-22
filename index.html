@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio Alvaro Alfonso</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">@AlvaroAlfonso3</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contato" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcutarMenu()">
+                <i class="fa-solid fa-bars"></i> 
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="/images/perfil Alvaro Alfonso.png" alt="foto_perfil_AlvaroAlfonso3">
+            </div>
+            <h1>ALVARO ANDRES ALFONSO RODRIGUEZ</h1>
+            <h2>Ingeniero de software - Experto en diseño y desarrollo de software</h2>
+            <div class="redes">
+                <a href="mailto:aalfonso@uniempresarial.edu.co?subject=Vimos%20tu%20portafolio%20web%20y%20me%20gustaria%20contactarte&body=Hola%2C%20Alvaro%20Andres%20Alfonso%20Rodriguez%20vimos%20tu%20portafolio%20web%2C%20nos%20llama%20la%20atencion%20y%20queremos%20contactarnos%20contigo..." target="_blank" title="Estoy aquí para colaborar. ¡Escríbeme!"><i class="fa-solid fa-envelope-circle-check"></i></a>
+                <a href="https://www.linkedin.com/in/alvaroalfonso3/" target="_blank" title="Conéctate y descubre mi trayectoria profesional"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/AlvaroAlfonso" target="_blank" title="Explora mis proyectos y contribuciones en código."><i class="fa-brands fa-github-alt"></i></a>
+                <a href="https://platzi.com/p/AlvaroAlfonso3/" target="_blank" title="Visita mi perfil y descubre todos mis cursos y diplomas en Platzi"><i class="fa-solid fa-laptop-code"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Alvaro Alfonso, </span>un desarrollador web apasionado con más de 3 años de 
+            experiencia creando soluciones digitales innovadoras. Actualmente, me estoy formando como 
+            Ingeniero de Software en la Universidad Empresarial de la Cámara de Comercio, donde he adquirido 
+            un sólido conocimiento en desarrollo web full-stack.Domino tecnologías como HTML, CSS y JavaScript, y he trabajado con frameworks populares como Node.js.
+            Además, tengo amplia experiencia utilizando herramientas no-code y low-code, como WordPress y Webflow, 
+            lo que me permite desarrollar soluciones web de forma rápida y eficiente. </p>
+
+            <p>Mi incursión en el mundo del desarrollo móvil a través de Flutterflow me ha permitido diseñar interfaces 
+            intuitivas y funcionales. Soy un entusiasta del diseño, y mis habilidades en Figma y Canva me permiten crear 
+            experiencias de usuario excepcionales. A lo largo de mi formación, he adoptado metodologías ágiles como Design Thinking y Scrum, lo que optimiza 
+            mis procesos de desarrollo y colaboración. Fuera del ámbito académico, me encanta aprender nuevos lenguajes 
+            de programación y explorar las últimas tendencias tecnológicas. Además, mi pasión por la natación 
+            y los animales me ayuda a mantener un equilibrio saludable y una creatividad constante.</p>
+                <div class="fila">
+                    <!-- Datos personales-->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Fecha de nacimiento</strong>
+                                07 de abril de 1998
+                            </li>
+                            <li>
+                                <strong>Numero de contacto</strong>
+                                (+57) 3158154139
+                            </li>
+                            <li>
+                                <strong>Correo elecrtronico</strong>
+                                aalfonso@uniempresarial.edu.co
+                            </li>
+                            <li>
+                                <strong>Landing emprendimiento</strong>
+                                https://ag.dreamtech.tech/
+                            </li>
+                            <li>
+                                <strong>Ciudad de residencia</strong>
+                                Bogota
+                            </li>
+                            <li>
+                                <strong>Cargo</strong>
+                                <span>Freelance</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Intereses -->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-interes">
+                            <div class="interes">
+                                <i class="fa-solid fa-person-swimming"></i>
+                                <span>Natación</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-headphones-simple"></i>
+                                <span>Musica</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>Viajar</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-dog"></i>
+                                <span>Animales</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                                <span>Libros</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-child-reaching"></i>
+                                <span>Meditacion</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-bowl-food"></i>
+                                <span>Cocinar</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-masks-theater"></i>
+                                <span>Teatro</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="curriculum-vitae">
+                    <button>
+                        Descargar curriculum Vitae <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                    <button>
+                        Descargar carta presentacion <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div> 
+        </div>
+    </section>
+
+    <!-- SECCCION SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Habilidades técnicas-->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h2>
+                    <div class="skill">
+                        <span>Webflow</span>
+                        <div class="barra-skill">
+                            <div class="progreso webflow">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Canva</span>
+                        <div class="barra-skill">
+                            <div class="progreso canva">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Figma</span>
+                        <div class="barra-skill">
+                            <div class="progreso figma">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Flutterflow</span>
+                        <div class="barra-skill">
+                            <div class="progreso flutterflow">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>WordPress</span>
+                        <div class="barra-skill">
+                            <div class="progreso wordpress">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso html-y-css">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>NodeJs</span>
+                        <div class="barra-skill">
+                            <div class="progreso nodejs">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Sql</span>
+                        <div class="barra-skill">
+                            <div class="progreso sql">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades profesionales-->
+                <div class="col">
+                    <h3>Habilidades profesionales</h2>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso adaptabilidad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Aprendizaje Autodidacta</span>
+                        <div class="barra-skill">
+                            <div class="progreso aprendizaje-autodidacta">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proactividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso proactividad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso resolucion-problemas">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Atención al detalle</span>
+                        <div class="barra-skill">
+                            <div class="progreso atencion_detalle">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestión del tiempo</span>
+                        <div class="barra-skill">
+                            <div class="progreso gestion-tiempo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Pensamiento analítico</span>
+                        <div class="barra-skill">
+                            <div class="progreso pensamiento-analitico">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Scrum</span>
+                        <div class="barra-skill">
+                            <div class="progreso scrum">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCCION CURRICULUM-->
+    <section class="curriculum" id="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum Vitae</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria de software</h4>
+                        <span class="casa">Fundación Universitaria Empresarial De La Cámara De Comercio De Bogotá</span>
+                        <span class="fecha">Abril 2022 - Actualmente</span>
+                        <p>Actualmente curso el cuarto semestre de Ingeniería de Software, con un promedio general de 4.1. 
+                        Durante mi formación, he adquirido una sólida base en programación web, destacándome en el uso de HTML, 
+                        CSS y JavaScript para desarrollar interfaces de usuario intuitivas y responsivas. Además, mi conocimiento
+                        del modelo entidad-relación me ha permitido diseñar y gestionar bases de datos relacionales de manera 
+                        eficiente. A través de diversos proyectos académicos, he aplicado estas habilidades para crear 
+                        aplicaciones web completas, funcionales y bien estructuradas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bootcamp Desarrollo Web Full Stack </h4>
+                        <span class="casa">Talento Tech. programa del Ministerio TIC </span>
+                        <span class="fecha">mayo 2024 - noviembre 2024</span>
+                        <p>Actualmente curso el cuarto semestre de Ingeniería de Software, con un promedio general de 4.1. Durante mi formación, he adquirido 
+                        una sólida base en programación web, destacándome en el uso de HTML, CSS y JavaScript para desarrollar interfaces de usuario intuitivas 
+                        y responsivas. Además, mi conocimiento del modelo entidad-relación me ha permitido diseñar y gestionar bases de datos relacionales de 
+                        manera eficiente. A través de diversos proyectos académicos, he aplicado estas habilidades para crear aplicaciones web completas, 
+                        funcionales y bien estructuradas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bootcamp Desarrollo Web Full Stack </h4>
+                        <span class="casa">Talento Tech. programa del Ministerio TIC </span>
+                        <span class="fecha">mayo 2024 - noviembre 2024</span>
+                        <p>Participé en el Bootcamp de Desarrollo Web Full Stack de Talento Tech, una iniciativa del Ministerio TIC. Durante este programa, 
+                        consolidé mis conocimientos en HTML, CSS y JavaScript, y adquirí nuevas habilidades en el desarrollo backend con Node.js. Además, 
+                        me familiaricé con metodologías ágiles como Scrum y herramientas de diseño como Figma. La experiencia colaborativa en equipos me 
+                        permitió desarrollar habilidades de trabajo en equipo y comunicación efectiva.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Maraton de Java en CodeGym</h4>
+                        <span class="casa">CodeGym. curso online para aprender Java</span>
+                        <span class="fecha">Agosto2024 - septiembre 2024</span>
+                        <p>Completé el Maratón de Java en CodeGym, un programa intensivo de un mes diseñado para sumergirme en el mundo de la programación Java.
+                        Durante este período, adquirí una sólida base en los fundamentos de Java, incluyendo sintaxis, estructuras de datos, algoritmos y orientación
+                        a objetos. La metodología práctica y desafiante de CodeGym me permitió desarrollar habilidades de resolución de problemas y pensamiento lógico.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Replica de mercado libre: MERCADOLIEBRE</h4>
+                        <span class="casa">Digital house. Proyecto de preparación</span>
+                        <span class="fecha">Abril 2019 - Septiembre 2020</span>
+                        <p>Repliqué la página de Mercado Libre como parte de mi proceso de aprendizaje, utilizando HTML, CSS y JavaScript. El desarrollo incluyó la 
+                        implementación de buenas prácticas de codificación, diseño responsive, y el manejo de conexiones asíncronas para la interacción con datos. 
+                        Además, diseñé e implementé un sistema de autenticación y gestión de sesiones para garantizar una experiencia segura y personalizada. Para 
+                        organizar y gestionar el proyecto, empleé la metodología Scrum, trabajando en sprints definidos y aplicando un enfoque iterativo que me permitió 
+                        optimizar continuamente el diseño y la funcionalidad del sitio.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Consultor de desarrollo web con WordPress</h4>
+                        <span class="casa">Dreamtech.info (emprendimiento)</span>
+                        <span class="fecha">Freelance 6 MESES</span>
+                        <p>Desarrollo de sitios web para negocios en WordPress, cumpliendo los requisitos del cliente, 
+                        implementando la creación de 5 sesiones, responsive y diseñando el prototipado con
+                        Figma, use metodologia</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollo de Landing Pages Estratégicas con Webflow</h4>
+                        <span class="casa">Dreamtech.info (emprendimiento)</span>
+                        <span class="fecha">Freelance, 8 MESES</span>
+                        <p>Diseñé y desarrollé landing pages personalizadas y altamente efectivas para diversas empresas utilizando Webflow. El proceso 
+                        incluyó la creación de prototipos y wireframes con un enfoque centrado en la experiencia del usuario y la optimización de conversiones. 
+                        Trabajé de manera colaborativa, manteniendo reuniones con los clientes para comprender a fondo sus objetivos comerciales y ofrecer 
+                        soluciones creativas, funcionales y escalables que se alinearan con sus necesidades específicas. Mi enfoque combinó diseño estratégico 
+                        y herramientas innovadoras para garantizar resultados impactantes y medibles.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Consultor de aplicaciones móviles con Flutterflow</h4>
+                        <span class="casa">Dreamtech.info (emprendimiento)</span>
+                        <span class="fecha">Freelance, 4 MESES</span>
+                        <p>Diseñé y desarrollé una aplicación móvil nativa utilizando FlutterFlow para administracion de los usuarios que están
+                        afiliados a la empresa con el proposito de conocer las rutas de los recicladores e informacion de la empresa, Construí una
+                        sólida base de datos y implementé un sistema de sesiones robusto para garantizar la seguridad y eficiencia de la aplicación,
+                        Gestioné todo el proceso de publicación de la aplicación en Google Play Store, asegurando su cumplimiento
+                        con las políticas de la plataforma y su disponibilidad para los usuarios.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Diseño UX y UI con Figma</h4>
+                        <span class="casa">Dreamtech.info (emprendimiento)</span>
+                        <span class="fecha">Freelance, 7 MESES</span>
+                        <p>Creé experiencias digitales intuitivas y agradables para usuarios de web y móvil, aplicando los principios de diseño centrado 
+                        en el usuario para garantizar una interacción fluida y satisfactoria. Desarrollé prototipos de alta fidelidad que simulaban la
+                        experiencia del usuario final, facilitando la comunicación con los equipos de desarrollo y obteniendo valiosos feedback. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO-->
+    <section class="portafolio" id="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./images/logo_code.png" alt="Proyecto_code:HTML-CSS-JAVASCRIPT">
+                    <div class="overlay">
+                        <h3>Proyecto Mercado-Liebre</h3>
+                        <p> Desde cero a Mercado Libre: ¡Dominé HTML, CSS, JavaScript 
+                        y Scrum construyendo mi propio e-commerce!</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/logo_figma.png" alt="Proyecto_figma">
+                    <div class="overlay">
+                        <h3>Prototipados web y movile con Figma</h3>
+                        <p> Diseño de experiencias digitales. Especializado en crear 
+                        interfaces intuitivas y agradables para usuarios de web y móvil.</p>
+                    </div>        
+                </div>
+                <div class="proyecto">
+                    <img src="./images/logo_wordpress.png" alt="Proyecto_wordpress">
+                    <div class="overlay">
+                        <h3>Construccion de paginas web robustas con Wordpress</h3>
+                        <p> Desarrollo web personalizado, centrado en el usuario y 
+                        optimizado para dispositivos móviles.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/logo_shopify.png" alt="Proyecto_shopify">
+                    <div class="overlay">
+                        <h3>Construccion de Ecommerce con Shopify</h3>
+                        <p> Desarrollo web personalizado, centrado en el usuario y 
+                        optimizado para dispositivos móviles.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/logo_flutterflow.png" alt="Proyecto_flutterflow">
+                    <div class="overlay">
+                        <h3>Creacion de app mobile con Flutterflow</h3>
+                        <p>Diseñé y desarrollé una aplicación móvil nativa con FlutterFlow, 
+                        optimizando la gestión de rutas y usuarios para una experiencia móvil 
+                        intuitiva y eficiente.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/logo_webflow.png" alt="Proyecto_webflow">
+                    <div class="overlay">
+                        <h3>Creacion de landing page con Webflow</h3>
+                        <p> Construyo landing pages personalizadas y optimizadas para generar
+                        leads y aumentar las conversiones, adaptándome a las necesidades únicas 
+                        de cada cliente y garantizando una experiencia de usuario excepcional.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- SECCION CONTACTO-->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- FORMULARIO-->
+                <div class="col">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Numero de contacto">
+                    <input type="text" placeholder="Correo electronico">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Dejame un mensaje"></textarea>
+                    <button>
+                        Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- MAPA-->
+                <div class="col">
+                    <img src="images/ubicacion_mapa.png" alt="fondo_mapa" >
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                CL 18 # 7-15 Bogotá, La Veracruz, Santa Fe
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Contactame:(+57) 3158154139
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: aalfonso@uniempresarial.edu.co
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://wa.link/3ogqlh" class="whatsapp-icon" target="_blank">
+            <img src="./images/Contaccto whatsapp.png" alt="">
+        </a>
+    </section>
+
+    
+
+    <!-- Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="mailto:aalfonso@uniempresarial.edu.co?subject=Vimos%20tu%20portafolio%20web%20y%20me%20gustaria%20contactarte&body=Hola%2C%20Alvaro%20Andres%20Alfonso%20Rodriguez%20vimos%20tu%20portafolio%20web%2C%20nos%20llama%20la%20atencion%20y%20queremos%20contactarnos%20contigo..." target="_blank" title="Estoy aquí para colaborar. ¡Escríbeme!"><i class="fa-solid fa-envelope-circle-check"></i></a>
+            <a href="https://www.linkedin.com/in/alvaroalfonso3/" target="_blank" title="Conéctate y descubre mi trayectoria profesional"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/AlvaroAlfonso" target="_blank" title="Explora mis proyectos y contribuciones en código."><i class="fa-brands fa-github-alt"></i></a>
+            <a href="https://platzi.com/p/AlvaroAlfonso3/" target="_blank" title="Visita mi perfil y descubre todos mis cursos y diplomas en Platzi"><i class="fa-solid fa-laptop-code"></i></a>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
