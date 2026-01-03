@@ -55,9 +55,9 @@ Este portafolio está diseñado para:
 
 🔗 Enlaces
 
-🌐 Portafolio online: https://alvaroalfonso.github.io/
-💼 LinkedIn: https://www.linkedin.com/in/alvaroalfonso3/
-📂 GitHub: https://github.com/alvaroalfonso
+🌐 Portafolio online: https://alvaroalfonso.github.io/ <br>
+💼 LinkedIn: https://www.linkedin.com/in/alvaroalfonso3/ <br>
+📂 GitHub: https://github.com/alvaroalfonso <br>
 
 📩 Contacto
 
