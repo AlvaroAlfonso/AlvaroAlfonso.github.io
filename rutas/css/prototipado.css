@@ -1,0 +1,515 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Menu*/
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 99; 
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 99; 
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: "Righteous";
+    font-size: 36px;
+    color: #43a3ff;
+    text-decoration: none;
+    
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+    
+}
+.contenedor-header header nav ul li a:hover{
+    color:#43a3ff;
+}
+
+.nav-responsive{
+    background-color:#43a3ff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* Seccion SOBRE MI*/
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.titulo_sobremi{
+    color: #43a3ff;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin:auto
+}
+.sobremi h2{
+    font-size:48px;
+    font-family:"Righteous";
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: 45px;
+}
+
+.sobremi .contenido-seccion p{
+    font-size:20px;
+    line-height:22px;
+    margin-bottom:20px;
+    text-align: justify;
+   
+   
+}
+.sobremi .contenido-seccion p span{
+    color: #43a3ff;
+    font-weight: bold;
+}
+
+/* =========================
+   NUEVA SECCION PROYECTOS
+========================= */
+.proyectos{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 100px 80px;
+    display: flex;
+    gap: 50px;
+    max-width: 1800px;
+    margin: auto;
+    align-items: flex-start;
+}
+
+/* IMAGEN */
+.proyectos .caja-imagen{
+    width: 45%;
+}
+
+.proyectos .caja-imagen img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+
+
+/* INFORMACION */
+.proyectos .caja-informacion{
+    width: 55%;
+}
+
+/* TITULOS */
+.titulo_principal{
+    font-family: "Righteous";
+    font-size: 40px;
+    color: #43a3ff;
+    margin-bottom: 25px;
+}
+
+.titulo_proyectos,
+.titulo_descripcion,
+.titulo_aporte,
+.titulo_tecnologias,
+.resultados{
+    font-family: "Righteous";
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #43a3ff;
+}
+
+/* PARRAFOS */
+.parrafos{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* =========================
+   BOTONES PROYECTO
+========================= */
+.btn_repositorio,
+.btn_diseño,
+.btn_proyecto{
+    background-color: transparent;
+    border: 2px solid #43a3ff;
+    color: #fff;
+    padding: 12px 22px;
+    margin-top: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 15px;
+}
+
+.btn_repositorio:hover,
+.btn_diseño:hover,
+.btn_proyecto:hover{
+    background-color: #43a3ff;
+    color: #000;
+}
+
+/* =========================
+   PORTAFOLIO WEB
+========================= */
+
+.portafolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.portafolio .contenido-seccion{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.portafolio h2{
+    font-size: 48px;
+    font-family: "Righteous";
+    text-align: center;
+    padding: 20px 0 50px;
+}
+
+/* === GRID 3x1 === */
+.portafolio .galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 30px;
+}
+
+/* CARD */
+.portafolio .galeria .proyecto{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden; /* Mantiene el overlay dentro de los bordes redondeados */
+    border-radius: 10px;
+    background-color: #1e2326; /* Fondo para que los logos destaquen */
+}
+
+.portafolio .galeria .proyecto img{
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    height: 350px;
+}
+
+.portafolio .galeria .proyecto:hover img {
+    transform: scale(1.1);
+}
+
+/* OVERLAY */
+.portafolio .galeria .proyecto .overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+       #43a4ff86
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: .4s ease;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.enlace_proyecto {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.enlace_proyecto:visited, 
+.enlace_proyecto:active, 
+.enlace_proyecto:hover {
+    color: inherit;
+    text-decoration: none;
+}
+.caja{
+     display: flex;
+    justify-content: center;
+}
+
+.portafolio .galeria .proyecto:hover .overlay{
+    opacity: 1;
+}
+
+.portafolio .galeria .proyecto .overlay h3{
+    font-family: "Righteous";
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.portafolio .galeria .proyecto .overlay p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* --- BOTÓN WHATSAPP ROJO --- */
+.whatsapp-btn-alerta {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 65px;
+    height: 65px;
+    background-color: #ff0000; /* Rojo Alerta */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    z-index: 1000; /* Por encima de todo */
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn-alerta:hover {
+    transform: scale(1.1);
+    background-color: #cc0000;
+}
+
+/* --- EFECTO DE PULSO PARPADEANTE --- */
+.pulso-rojo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ff0000;
+    z-index: -1;
+    animation: parpadeo-alerta 2s infinite;
+}
+
+@keyframes parpadeo-alerta {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+
+/* Footer */
+
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition:  .3s;
+}
+footer{
+    background-color: rgb(30, 35, 38);
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #43a3ff;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size:18px;
+}
+
+footer .redes a:hover {
+    background-color: #43a3ff;
+}
+
+@media screen and (max-width: 980px) {
+    .nav-responsive {
+        display: block; /* Aparece el icono hamburguesa */
+    }
+
+    /* Forzamos el cierre del nav inicialmente */
+    #nav {
+        display: none !important; 
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: #1e2326;
+        flex-direction: column;
+        z-index: 99;
+    }
+
+    /* Clase que activa el JS */
+    #nav.responsive {
+        display: flex !important;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    #nav ul li {
+        padding: 15px 0;
+    }
+
+    /* Proyectos protipado*/
+    /*Proyectos fullstack*/
+    /* 1. SECCIÓN GENERAL: Pasamos a columna */
+    .proyectos {
+        flex-direction: column;
+        padding: 40px 40px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* 2. CAJAS AL 100% */
+    .proyectos .caja-imagen, 
+    .proyectos .caja-informacion {
+        width: 100%;
+    }
+
+    /* 3. IMAGEN Y BOTÓN VIDEO: El botón ahora se integra bajo la imagen */
+    .proyectos .caja-imagen img {
+        margin: 0 auto;
+    }
+
+    /* 4. TEXTOS: Ajustamos tamaños para que no saturen */
+    .titulo_principal {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .parrafos {
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .titulo_proyectos, .titulo_descripcion, .titulo_aporte, .titulo_tecnologias, .resultados {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* 5. BOTONES DE ACCIÓN: Los hacemos atractivos y no tan largos */
+    .proyectos .caja-informacion a {
+        display: inline-block; /* Permite que los botones vivan uno al lado del otro */
+        width: 48%; /* Dos botones por fila en tablets */
+        margin-bottom: 10px;
+    }
+
+    .btn_repositorio, .btn_diseño, .btn_proyecto {
+        width: 100%; /* El botón ocupa el 100% de su enlace (48%) */
+        margin-right: 0;
+        padding: 12px 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+    /*Otros proyectos*/
+    .portafolio h2 {
+        font-size: 32px;
+        padding: 20px 0;
+    }
+    .portafolio .galeria {
+        grid-template-columns: 1fr; 
+        gap: 25px;
+    }
+    .portafolio .galeria .proyecto img {
+        height: 80%; /* Reducimos altura en móvil para no ocupar toda la pantalla */
+    }
+    .portafolio .galeria .proyecto .overlay {
+        opacity: 1; 
+        background: rgba(30, 35, 38, 0.85); /* Fondo sólido oscuro para legibilidad */
+        position: relative; /* Lo ponemos debajo de la imagen en lugar de encima */
+        border-radius: 0 0 10px 10px;
+        padding: 20px;
+    }
+    .portafolio .galeria .proyecto img {
+        border-radius: 10px 10px 0 0;
+    }
+}

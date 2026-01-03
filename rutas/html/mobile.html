@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Proyectos mobile</title>
+    <link rel="stylesheet" href="/rutas/css/mobile.css">
+</head>
+<body>
+
+<!-- MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="/index.html">@AlvaroAlfonso3</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../../index.html#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="../../index.html#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="../../index.html#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="../../index.html#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="../../index.html#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="../../index.html#contato" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcutarMenu()">
+                <i class="fa-solid fa-bars"></i> 
+            </div>
+        </header>
+    </div>
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+        <h2 class="titulo_sobremi">Aplicaciones Móviles</h2>
+            <p>En esta sección presento proyectos de aplicaciones móviles desarrollados utilizando 
+                FlutterFlow, enfocados en resolver necesidades reales mediante soluciones funcionales, 
+                intuitivas y orientadas al usuario. Estos proyectos reflejan mi capacidad para diseñar
+                y construir experiencias móviles completas, integrando lógica, datos y 
+                experiencia de usuario.
+            </p>    
+    </div>
+    </section>
+    <section id="proyectos" class="proyectos">
+        <div class="caja-imagen">
+            <img src="../../images/asoreambApp.png" alt="Proyecto_urban&shop">
+        </div>
+        
+        <div class="caja-informacion">
+            <h1 class="titulo_principal"> Aplicación Móvil para Empresa de Reciclaje (Asoreamb)</h1>
+
+            <h2 class="titulo_proyectos"> Tipo de proyecto:</h2>
+            <p class="parrafos"> Documentación UX / Análisis de usabilidad web</p>
+
+            <h3 class="titulo_descripcion">Descripción del proyecto</h3>
+            <p class="parrafos">Desarrollo de una aplicación móvil orientada a la gestión de usuarios
+                y rutas operativas para una empresa de reciclaje. El objetivo fue facilitar el 
+                acceso a información relevante de la empresa y optimizar la visualización de rutas 
+                para los usuarios afiliados.
+            </p>
+
+            <h3 class="titulo_aporte">Mi aporte</h3>
+            <p class="parrafos">Diseñé y desarrollé la aplicación móvil utilizando FlutterFlow, implementando
+                la estructura de pantallas, flujos de usuario y lógica de la aplicación. Integré una base de datos 
+                y un sistema de autenticación para garantizar el acceso seguro y la correcta gestión de la información. 
+                Además, gestioné el proceso de publicación en Google Play Store.
+            </p>
+
+            <h4 class="titulo_tecnologias">Metodología / Enfoque</h4>
+            <p class="parrafos">FlutterFlow, UX/UI, Bases de Datos, Autenticación, Google Play
+            </p>
+
+            <h4 class="resultados">Resultado / Aprendizaje</h4>
+            <p class="parrafos">Este proyecto fortaleció mi experiencia en el desarrollo de aplicaciones móviles funcionales, 
+                así como la integración de datos y sistemas de autenticación dentro de entornos mobile.
+            </p>
+
+
+            <a href="https://github.com/AlvaroAlfonso/App-Asoreamb-Flutterflow/tree/flutterflow" target="_blank">
+                <button class="btn_repositorio">
+                   Repositorio (GitHub)
+                </button>
+            </a>
+            <a href="https://asoreambapp.flutterflow.app/" target="_blank">
+                <button class="btn_repositorio">
+                    Ver Aplicacion
+                </button>
+            </a>
+        </div>
+
+    </section>
+    <section class="portafolio" id="portafolio">
+        <div class="contenido-seccion">
+            <h2 class="titulo_sobremi">Otros proyectos</h2>
+            <div class="galeria">
+                <a href="fullstack.html" class="enlace_proyecto">
+                <div class="proyecto">
+                    <img src="../../images/logo_code.png" alt="Proyecto_code:HTML-CSS-JAVASCRIPT">
+                    <div class="overlay">
+                        <h3>Proyectos Full Stack</h3>
+                        <p> Desarrollo de aplicaciones y landing pages utilizando tecnologías frontend como HTML, CSS y JavaScript, 
+                            integrando APIs REST y servicios externos para crear soluciones funcionales y escalables. Enfocado en 
+                            construir productos digitales completos, desde la interfaz hasta la integración con datos y servicios.
+                        </p>
+                    </div>
+                </div>
+                </a>
+                <a href="prototipado.html" class="enlace_proyecto">
+                <div class="proyecto">
+                    <img src="../../images/logo_figma.png" alt="Proyecto_code:HTML-CSS-JAVASCRIPT">
+                    <div class="overlay">
+                    <h3>Proyectos UX/UI & Prototipos Web y Mobile</h3>
+                    <p> Diseño y prototipado de interfaces digitales centradas en el usuario, aplicando principios de usabilidad y 
+                        heurísticas de Jakob Nielsen. Creación de prototipos de alta fidelidad para proyectos web y móviles, 
+                        facilitando la validación de ideas antes de su desarrollo.
+                    </p>
+                    </div>
+                </div>
+                </a>  
+                
+                <a href="no-code.html" class="enlace_proyecto">
+                    <div class="proyecto">
+                    <img src="../../images/logo_wordpress.png" alt="Proyecto_code:HTML-CSS-JAVASCRIPT">
+                    <div class="overlay">
+                        <h3>Proyectos No-Code / Low-Code Solutions</h3>
+                        <p> Desarrollo de sitios web y landing pages utilizando WordPress y Webflow para negocios y proyectos institucionales. 
+                            Enfoque en rapidez de ejecución, claridad del contenido y optimización de la experiencia de usuario sin sacrificar 
+                            calidad técnica.
+                        </p>
+                    </div>
+                </div>
+                </a>  
+            </div>
+        </div>
+    </section>
+    <a href="https://wa.link/3ogqlh" class="whatsapp-btn-alerta" target="_blank">
+        <span class="pulso-rojo"></span>
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer-->
+    <footer>
+        <a href="#sobremi" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="mailto:aalfonso@uniempresarial.edu.co?subject=Vimos%20tu%20portafolio%20web%20y%20me%20gustaria%20contactarte&body=Hola%2C%20Alvaro%20Andres%20Alfonso%20Rodriguez%20vimos%20tu%20portafolio%20web%2C%20nos%20llama%20la%20atencion%20y%20queremos%20contactarnos%20contigo..." target="_blank" title="Estoy aquí para colaborar. ¡Escríbeme!"><i class="fa-solid fa-envelope-circle-check"></i></a>
+            <a href="https://www.linkedin.com/in/alvaroalfonso3/" target="_blank" title="Conéctate y descubre mi trayectoria profesional"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/AlvaroAlfonso" target="_blank" title="Explora mis proyectos y contribuciones en código."><i class="fa-brands fa-github-alt"></i></a>
+            <a href="https://platzi.com/p/AlvaroAlfonso3/" target="_blank" title="Visita mi perfil y descubre todos mis cursos y diplomas en Platzi"><i class="fa-solid fa-laptop-code"></i></a>
+        </div>
+    </footer>
+    
+    <script src="/app.js"></script>
+ 
+
+</body>
+</html>

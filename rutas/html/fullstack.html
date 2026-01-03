@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Proyectos fullstack</title>
+    <link rel="stylesheet" href="/rutas/css/fullstack.css">
+</head>
+<body>
+
+<!-- MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="/index.html">@AlvaroAlfonso3</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../../index.html#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="../../index.html#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="../../index.html#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="../../index.html#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="../../index.html#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="../../index.html#contato" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcutarMenu()">
+                <i class="fa-solid fa-bars"></i> 
+            </div>
+        </header>
+    </div>
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+        <h2 class="titulo_sobremi">Desarrollo Web FullStack</h2>
+            <p>En esta sección presento proyectos desarrollados principalmente con código, enfocados en la construcción de interfaces web funcionales y en la integración 
+                de servicios externos mediante APIs REST. Estos proyectos reflejan mi capacidad para estructurar aplicaciones frontend sólidas, consumir y gestionar datos,
+                e implementar soluciones orientadas a resolver necesidades reales. El enfoque está en la correcta organización del proyecto, la experiencia de usuario y 
+                la ejecución técnica, más allá del aspecto visual.
+            </p>    
+        </div>
+    </section>
+    <section id="proyectos" class="proyectos">
+        <div class="caja-imagen">
+            <img src="../../images/urban_shop.png" alt="Proyecto_urban&shop">
+        </div>
+        <div class="caja-informacion">
+            <h1 class="titulo_principal"> Urban <span class="ampersand"> &amp; </span>  Shop</h1>
+
+            <h2 class="titulo_proyectos"> Tipo de proyecto:</h2>
+            <p class="parrafos"> Aplicación web / Landing page e-commerce (Frontend)</p>
+
+            <h3 class="titulo_descripcion">Descripción del proyecto</h3>
+            <p class="parrafos">Urban & Shop es un proyecto de e-commerce frontend 
+                desarrollado para una marca de moda reciclable, enfocado en la 
+                presentación de productos y la simulación de un flujo de pago en línea. 
+                El objetivo fue construir una interfaz funcional y clara, integrando 
+                una pasarela de pagos en modo sandbox para validar el proceso de compra 
+                desde el frontend.
+            </p>
+
+            <h3 class="titulo_aporte">Mi aporte</h3>
+            <p class="parrafos">Desarrollé la estructura frontend del proyecto utilizando 
+                HTML, CSS y JavaScript, organizando la arquitectura del sitio y los 
+                componentes principales. Implementé la integración de la pasarela de pagos 
+                de Mercado Pago en entorno sandbox, simulando el flujo de pago sin backend, 
+                y trabajé el diseño y la experiencia de usuario para garantizar una navegación
+                clara y responsive.
+            </p>
+
+            <h4 class="titulo_tecnologias">Tecnologías utilizadas</h4>
+            <p class="parrafos">HTML, CSS, JavaScript, APIs REST, Mercado Pago (Sandbox), UX/UI
+            </p>
+
+            <h4 class="resultados">Resultado / Aprendizaje</h4>
+            <p class="parrafos">El proyecto reforzó mi comprensión del consumo de APIs externas 
+            desde el frontend, la integración de servicios de pago en entornos de prueba y la 
+            importancia de una arquitectura clara en aplicaciones web, diferenciando 
+            responsabilidades entre frontend y backend.
+            </p>
+
+            <a href="https://github.com/AlvaroAlfonso/URBAN-SHOP/tree/project" target="_blank">
+                <button class="btn_repositorio">
+                    Repositorio (GitHub)
+                </button>
+            </a>
+            <a href="https://www.figma.com/proto/ODg5IOUgKJYOEpJsZ7jslb/proyectoUni-paula-Copy?node-id=0-1&p=f&t=0mkqiGTjoLYBSxuh-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank">
+                <button class="btn_diseño">
+                    prototipado (Figma)
+                </button>
+            </a>
+            <a href="https://proyect-urbanshop.netlify.app/" target="_blank">
+                <button class="btn_proyecto">
+                    Ver proyecto
+                </button>
+            </a>
+        </div>
+
+    </section>
+    <section id="proyectos" class="proyectos">
+        <div class="caja-imagen">
+            <img src="../../images/mindBridge.png" alt="mindBridge_landingPage">
+        </div>
+     
+        <div class="caja-informacion">
+            <h1 class="titulo_principal"> MindBridge con Agente de Inteligencia Artificial</h1>
+
+            <h2 class="titulo_proyectos"> Tipo de proyecto:</h2>
+            <p class="parrafos"> Aplicación web / Landing page interactiva</p>
+
+            <h3 class="titulo_descripcion">Descripción del proyecto</h3>
+            <p class="parrafos">Landing page desarrollada para un servicio de psicología, orientada a 
+                evaluar el estado emocional del usuario mediante una experiencia interactiva. 
+                El objetivo del proyecto fue ofrecer una primera aproximación digital que guiara al 
+                usuario a través de preguntas estructuradas y generara una respuesta orientativa en tiempo real.
+            </p>
+
+            <h3 class="titulo_aporte">Mi aporte</h3>
+            <p class="parrafos">Desarrollé la interfaz frontend y la lógica de interacción de la landing page, 
+                integrando un agente de inteligencia artificial capaz de procesar las respuestas del usuario y 
+                generar una evaluación básica del estado de ánimo. Me enfoqué en la claridad de la experiencia, 
+                el flujo de preguntas y la correcta comunicación de resultados al usuario.
+            </p>
+
+            <h4 class="titulo_tecnologias">Tecnologías utilizadas</h4>
+            <p class="parrafos">HTML, CSS, JavaScript, APIs REST, Integración de IA, UX/UI
+            </p>
+
+            <h4 class="resultados">Resultado / Aprendizaje</h4>
+            <p class="parrafos">Este proyecto fortaleció mi experiencia en la integración de servicios inteligentes
+                dentro de aplicaciones frontend, así como el diseño de flujos conversacionales y experiencias 
+                orientadas al usuario, combinando lógica, diseño y funcionalidad.
+            </p>
+
+            <a href="https://github.com/AlvaroAlfonso/Proyect-mindBridge_native/tree/main" target="_blank">
+                <button class="btn_repositorio">
+                    Repositorio (GitHub)
+                </button>
+            </a>
+            <a href="https://www.figma.com/proto/9NKnhY0pG5KMFrXkQU3IAb/--?node-id=31-49&starting-point-node-id=31%3A49" target="_blank">
+                <button class="btn_diseño">
+                    Diseño (Figma)
+                </button>
+            </a>
+            <a href="https://proyect-mindbringe.netlify.app/" target="_blank">
+                <button class="btn_proyecto">
+                    Ver proyecto
+                </button>
+            </a>
+        </div>
+    </section>
+    <section class="portafolio" id="portafolio">
+        <div class="contenido-seccion">
+            <h2 class="titulo_sobremi">Otros proyectos</h2>
+            <div class="galeria">
+                <a href="prototipado.html" class="enlace_proyecto">
+                <div class="proyecto">
+                    <img src="../../images/logo_figma.png" alt="Proyecto_code:HTML-CSS-JAVASCRIPT">
+                    <div class="overlay">
+                        <h3>Proyectos UX/UI & Prototipos Web y Mobile</h3>
+                        <p> Diseño y prototipado de interfaces digitales centradas en el usuario, aplicando principios de usabilidad y 
+                            heurísticas de Jakob Nielsen. Creación de prototipos de alta fidelidad para proyectos web y móviles, 
+                            facilitando la validación de ideas antes de su desarrollo.
+                        </p>
+                    </div>
+                </div>
+                </a>
+                
+                <a href="no-code.html" class="enlace_proyecto">
+                    <div class="proyecto">
+                        <img src="../../images/logo_wordpress.png" alt="Proyecto_code:HTML-CSS-JAVASCRIPT">
+                        <div class="overlay">
+                            <h3>Proyectos No-Code / Low-Code Solutions</h3>
+                            <p> Desarrollo de sitios web y landing pages utilizando WordPress y Webflow para negocios y proyectos institucionales. 
+                             Enfoque en rapidez de ejecución, claridad del contenido y optimización de la experiencia de usuario sin sacrificar 
+                             calidad técnica.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="mobile.html" class="enlace_proyecto">
+                <div class="proyecto">
+                    <img src="../../images/logo_flutterflow.png" alt="Proyecto_code:HTML-CSS-JAVASCRIPT">
+                    <div class="overlay">
+                        <h3>Proyectos Aplicaciones Móviles</h3>
+                        <p> Diseño y desarrollo de aplicaciones móviles utilizando FlutterFlow, integrando bases de datos y sistemas de autenticación. 
+                            Enfoque en crear soluciones móviles funcionales, intuitivas y alineadas con las necesidades reales del usuario.
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <a href="https://wa.link/3ogqlh" class="whatsapp-btn-alerta" target="_blank">
+        <span class="pulso-rojo"></span>
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!-- Footer-->
+    <footer>
+        <a href="#sobremi" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="mailto:aalfonso@uniempresarial.edu.co?subject=Vimos%20tu%20portafolio%20web%20y%20me%20gustaria%20contactarte&body=Hola%2C%20Alvaro%20Andres%20Alfonso%20Rodriguez%20vimos%20tu%20portafolio%20web%2C%20nos%20llama%20la%20atencion%20y%20queremos%20contactarnos%20contigo..." target="_blank" title="Estoy aquí para colaborar. ¡Escríbeme!"><i class="fa-solid fa-envelope-circle-check"></i></a>
+            <a href="https://www.linkedin.com/in/alvaroalfonso3/" target="_blank" title="Conéctate y descubre mi trayectoria profesional"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/AlvaroAlfonso" target="_blank" title="Explora mis proyectos y contribuciones en código."><i class="fa-brands fa-github-alt"></i></a>
+            <a href="https://platzi.com/p/AlvaroAlfonso3/" target="_blank" title="Visita mi perfil y descubre todos mis cursos y diplomas en Platzi"><i class="fa-solid fa-laptop-code"></i></a>
+        </div>
+    </footer>
+   <script src="/app.js"></script>
+</body>
+</html>
