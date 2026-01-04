@@ -88,6 +88,11 @@ nav ul {
     cursor: pointer;
     display: none;
 }
+
+.ampersand {
+    font-family: "Arial"; /* O "Georgia" si quieres que sea elegante */
+    font-weight: bold; /* A veces se ve mejor menos grueso */
+}
 /* Seccion SOBRE MI*/
 .sobremi{
     background-color: #1e2326;

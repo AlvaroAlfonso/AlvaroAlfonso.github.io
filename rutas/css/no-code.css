@@ -190,6 +190,10 @@ html {
     cursor: pointer;
     display: none;
 }
+.ampersand {
+    font-family: "Arial", sans-serif; /* O "Georgia" si quieres que sea elegante */
+    font-weight: bold; /* A veces se ve mejor menos grueso */
+}
 
 /* =========================
    SECCION SOBRE MI

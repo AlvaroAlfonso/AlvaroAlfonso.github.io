@@ -257,30 +257,19 @@ nav ul {
 }
 
 .portafolio .galeria .proyecto img{
-    width: 100%;
+     width: 100%;
     display: block;
-    
-    object-fit: contain; /* Ajusta el logo sin deformarlo */
-    
-    transition: transform 0.5s;
+    border-radius: 10px;
+    height: 350px;
 }
 
 .portafolio .galeria .proyecto:hover img {
     transform: scale(1.1);
 }
 .enlace_proyecto {
-    /* Quita la línea de abajo (subrayado) */
-    text-decoration: none; 
-
-    /* Hace que el texto use el color de sus elementos hijos (h3, p) */
-    /* Así evitas el azul inicial y el morado de "visitado" */
-    color: inherit; 
-
-    /* IMPORTANTE: Hace que todo el bloque de la card sea clicable */
-    display: block; 
-
-    /* Asegura que el cursor siempre sea la manito */
-    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 /* Para garantizar que nunca cambie a morado ni azul al hacer clic */
@@ -295,7 +284,7 @@ nav ul {
 .portafolio .galeria .proyecto .overlay{
     position: absolute;
     inset: 0;
-    background: #43a4ff63;
+    background: #43a4ff8f;
     display: flex;
     flex-direction: column;
     justify-content: center;
